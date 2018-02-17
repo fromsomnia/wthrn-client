@@ -2,13 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>WthrnClient</title>
-  <base href="/">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114337342-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'UA-114337342-1');
+  </script>
+
+  <!-- GitHub buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+  <base href="/">
+  <title>wthrn</title>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="wthrn,Mixmax,Gmail">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Open Graph tags -->
+  <meta property="og:url"           content="https://www.wthrn.com" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="wthrn" />
+  <meta property="og:description"   content="weather; right now." />
+  <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="/assets/images/favicon-16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/assets/images/favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/assets/images/favicon-96.png" sizes="96x96">
+
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="wthrn">
+  <meta itemprop="description" content="weather; right now.">
+  <meta itemprop="image" content="/assets/images/banner.png">
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="wthrn">
+  <meta name="twitter:description" content="weather; right now.">
+  <meta name="twitter:image" content="/images/banner.png">
 </head>
 <body>
+  <!-- Facebook buttons -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Twitter -->
+    <script>window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+
+      return t;
+    }(document, "script", "twitter-wjs"));</script>
+
+    <!-- The actual app -->
   <app-root></app-root>
 </body>
 </html>

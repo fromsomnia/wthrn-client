@@ -1,0 +1,84 @@
+@import "../styles.scss";
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  background: $light-blue;
+  font-family: Lato,sans-serif;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .wthrn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0;
+
+    .wthrn-title {
+      font-size: 15vw;
+      margin: 0;
+    }
+
+    .wthrn-subtitle {
+      font-size: 3vw;
+      text-align: center;
+    }
+
+    .wthrn {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .placeholder {
+        height: 100%;
+      }
+    }
+
+    .github-links, .social {
+      width: 100%;
+      min-height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .social-action {
+      padding: 0 10px;
+      cursor: pointer;
+      color: white;
+
+      &:hover {
+        color: $gray;
+      }
+    }
+
+    span {
+      color: $dark-gray;
+    }
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    flex: none;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+
+    div {
+      padding-right: 10px;
+      text-align: center;
+    }
+  }
+}
+
+// Our app component will take up the entire window
+:host {
+  display: flex;
+  height: 100%;
+}

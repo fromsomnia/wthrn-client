@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+$gray: #AFAFAF;
+$dark-gray: #5d5d5d;
+$blue: #004799;
+$light-blue: #66ADFF;
+$white: #FFFFFF;
+
+html, body {
+  height: 100%;
+  margin: 0;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: $light-blue;
+}
